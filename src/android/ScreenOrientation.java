@@ -30,7 +30,6 @@ public class ScreenOrientation extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("set")) {
             String orientation = args.optString(0);
-
             Activity activity = this.cordova.getActivity();
             if (orientation.equals(UNSPECIFIED)) {
                 activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
@@ -58,9 +57,8 @@ public class ScreenOrientation extends CordovaPlugin {
                 activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
             }
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
 }
 
