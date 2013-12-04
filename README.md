@@ -1,4 +1,4 @@
-# Updated to use with Cordova 2.5
+# Updated to use with Cordova 3.x
 
 # Screen Orientation PhoneGap Plugin for Android
 
