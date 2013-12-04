@@ -56,6 +56,7 @@ public class ScreenOrientation extends CordovaPlugin {
             } else if (orientation.equals(FULL_SENSOR)) {
                 activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
             }
+            callbackContext.success();
             return true;
         }
         return false;
