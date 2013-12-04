@@ -8,7 +8,7 @@ This PhoneGap Plugin for Android can lock/unlock the screen orientation.
 
 * install it via cordova cli: `cordova plugin add https://github.com/gitawego/pg-plugin-screen-orientation.git`
 
-* Add the following line to res/xml/plugins.xml.
+* Add the following line to www/config.xml.
 ```
 <gap:plugin name="com.tsukurusha.phonegap.plugins" />
 ```
