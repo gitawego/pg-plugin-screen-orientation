@@ -15,7 +15,7 @@
         </config-file>
         <source-file src="src/android/ScreenOrientation.java" target-dir="src/com/tsukurusha/cordova/screenorientation" />
 
-        <js-module src="www/pg-plugin-screen-orientation.js" name="screenOrientation">
+        <js-module src="www/ScreenOrientation.js" name="screenOrientation">
             <merges target="navigator.screenOrientation" />
         </js-module>
     </platform>
