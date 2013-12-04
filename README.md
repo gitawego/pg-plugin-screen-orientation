@@ -6,23 +6,19 @@ This PhoneGap Plugin for Android can lock/unlock the screen orientation.
 
 ## How to install
 
-1. Add com/tsukurusha/phonegap/plugins/ScreenOrientation.java to your src folder.
+* install it via cordova cli: `cordova plugin add https://github.com/gitawego/pg-plugin-screen-orientation.git`
 
-2. Add the following line to res/xml/plugins.xml.
-<code>&lt;plugin name="ScreenOrientation" value="com.tsukurusha.phonegap.plugins.ScreenOrientation" /&gt;</code>
+* Add the following line to res/xml/plugins.xml.
+```
+<gap:plugin name="com.tsukurusha.phonegap.plugins" />
+```
 
-3. Add pg-plugin-screen-orientation.js to your assets/www folder and import it into your html file like:
-<code>&lt;script type="text/javascript" charset="utf-8" src="pg-plugin-screen-orientation.js"&gt;&lt;/script&gt;</code>
+* The javascript interface is as follows:
 
-4. The javascript interface is as follows:
+ - To lock the screen to Landscape: `navigator.screenOrientation.set('landscape');`
 
- - To lock the screen to Landscape:
-<code>navigator.screenOrientation.set('landscape');</code>
+ - To lock the screen to Portrait:`navigator.screenOrientation.set('portrait');`
 
- - To lock the screen to Portrait:
-<code>navigator.screenOrientation.set('portrait');</code>
-
- - To unlock:
-<code>navigator.screenOrientation.set('fullSensor');</code>
+ - To unlock:`navigator.screenOrientation.set('fullSensor');`
 
  - You can use other orientation parameters defined in http://developer.android.com/reference/android/R.attr.html#screenOrientation

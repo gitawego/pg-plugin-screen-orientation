@@ -1,11 +1,11 @@
-<plugin id="com.tsukurusha.phonegap.plugins" version="0.2.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.tsukurusha.phonegap.plugins" version="0.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>ScreenOrientation</name>
     <description>Screen Orientation PhoneGap Plugin for Android</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,video player</keywords>
-    <js-module src="www/pg-plugin-screen-orientation.js" name="screenOrientation">
-        <merges target="navigator" />
-    </js-module>
+    <keywords>cordova,orientation</keywords>
+    <repo>https://github.com/gitawego/pg-plugin-screen-orientation.git</repo>
+    
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -13,6 +13,10 @@
                 <param name="android-package" value="com.tsukurusha.phonegap.plugins.ScreenOrientation" />
             </feature>
         </config-file>
-        <source-file src="src/ScreenOrientation.java" target-dir="src/com/tsukurusha/phonegap/plugins" />
+        <source-file src="src/android/ScreenOrientation.java" target-dir="src/com/tsukurusha/phonegap/plugins" />
+
+        <js-module src="www/pg-plugin-screen-orientation.js" name="screenOrientation">
+            <merges target="navigator.screenOrientation" />
+        </js-module>
     </platform>
 </plugin>
