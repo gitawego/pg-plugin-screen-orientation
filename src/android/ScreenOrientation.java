@@ -56,13 +56,13 @@ public class ScreenOrientation extends CordovaPlugin {
             } else if (orientation.equals(FULL_SENSOR)) {
                 activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_FULL_SENSOR);
             }else{
-               callbackContext.error('orientation mode '+orientation+' not found');
+               callbackContext.error("orientation mode "+orientation+" not found");
                return false; 
             }
             callbackContext.success();
             return true;
         }
-        callbackContext.error('action '+action+' not found');
+        callbackContext.error("action "+action+" not found");
         return false;
     }
 }
