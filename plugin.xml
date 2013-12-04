@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="com.tsukurusha.phonegap.plugins" version="0.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="com.tsukurusha.cordova.screenorientation" version="0.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>ScreenOrientation</name>
     <description>Screen Orientation PhoneGap Plugin for Android</description>
     <license>Apache 2.0</license>
@@ -10,10 +10,10 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="ScreenOrientation">
-                <param name="android-package" value="com.tsukurusha.phonegap.plugins.ScreenOrientation" />
+                <param name="android-package" value="com.tsukurusha.cordova.screenorientation.ScreenOrientation" />
             </feature>
         </config-file>
-        <source-file src="src/android/ScreenOrientation.java" target-dir="src/com/tsukurusha/phonegap/plugins" />
+        <source-file src="src/android/ScreenOrientation.java" target-dir="src/com/tsukurusha/cordova/screenorientation" />
 
         <js-module src="www/pg-plugin-screen-orientation.js" name="screenOrientation">
             <merges target="navigator.screenOrientation" />
