@@ -5,7 +5,9 @@
     <license>Apache 2.0</license>
     <keywords>cordova,orientation</keywords>
     <repo>https://github.com/gitawego/pg-plugin-screen-orientation.git</repo>
-    
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
